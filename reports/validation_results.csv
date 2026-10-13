@@ -1,0 +1,53 @@
+﻿run_timestamp_utc,category,check_name,actual_value,expected_value,difference,status,details
+2026-10-13T11:12:38.045190+00:00,row_counts,customers_row_count,350,350,,PASS,Expected number of customer records.
+2026-10-13T11:12:38.045190+00:00,row_counts,products_row_count,26,26,,PASS,Expected number of product records.
+2026-10-13T11:12:38.045190+00:00,row_counts,orders_row_count,1200,1200,,PASS,Expected number of order records.
+2026-10-13T11:12:38.045190+00:00,row_counts,order_items_row_count,2908,2908,,PASS,Expected number of order-line records.
+2026-10-13T11:12:38.045190+00:00,row_counts,payments_row_count,1200,1200,,PASS,Expected number of payment records.
+2026-10-13T11:12:38.045190+00:00,row_counts,returns_row_count,42,42,,PASS,Expected number of return records.
+2026-10-13T11:12:38.045190+00:00,row_counts,reviews_row_count,650,650,,PASS,Expected number of review records.
+2026-10-13T11:12:38.045190+00:00,data_quality,duplicate_customer_ids,0,0,,PASS,Duplicate customer identifier groups.
+2026-10-13T11:12:38.045190+00:00,data_quality,duplicate_product_ids,0,0,,PASS,Duplicate product identifier groups.
+2026-10-13T11:12:38.045190+00:00,data_quality,duplicate_order_ids,0,0,,PASS,Duplicate order identifier groups.
+2026-10-13T11:12:38.045190+00:00,data_quality,duplicate_order_item_ids,0,0,,PASS,Duplicate order-item identifier groups.
+2026-10-13T11:12:38.045190+00:00,data_quality,duplicate_payment_ids,0,0,,PASS,Duplicate payment identifier groups.
+2026-10-13T11:12:38.045190+00:00,data_quality,duplicate_return_ids,0,0,,PASS,Duplicate return identifier groups.
+2026-10-13T11:12:38.045190+00:00,data_quality,duplicate_review_ids,0,0,,PASS,Duplicate review identifier groups.
+2026-10-13T11:12:38.045190+00:00,data_quality,missing_customer_ids,0,0,,PASS,Customers with missing identifiers.
+2026-10-13T11:12:38.045190+00:00,data_quality,missing_product_ids,0,0,,PASS,Products with missing identifiers.
+2026-10-13T11:12:38.045190+00:00,data_quality,missing_order_ids,0,0,,PASS,Orders with missing identifiers.
+2026-10-13T11:12:38.045190+00:00,data_quality,missing_order_item_ids,0,0,,PASS,Order items with missing identifiers.
+2026-10-13T11:12:38.045190+00:00,data_quality,missing_payment_ids,0,0,,PASS,Payments with missing identifiers.
+2026-10-13T11:12:38.045190+00:00,data_quality,missing_return_ids,0,0,,PASS,Returns with missing identifiers.
+2026-10-13T11:12:38.045190+00:00,data_quality,missing_review_ids,0,0,,PASS,Reviews with missing identifiers.
+2026-10-13T11:12:38.045190+00:00,data_quality,invalid_quantities,0,0,,PASS,Order items with null or non-positive quantities.
+2026-10-13T11:12:38.045190+00:00,data_quality,negative_unit_prices,0,0,,PASS,Order items with negative historical unit prices.
+2026-10-13T11:12:38.045190+00:00,data_quality,negative_unit_costs,0,0,,PASS,Order items with negative historical unit costs.
+2026-10-13T11:12:38.045190+00:00,data_quality,negative_discounts,0,0,,PASS,Order items with negative discounts.
+2026-10-13T11:12:38.045190+00:00,data_quality,negative_shipping_fees,0,0,,PASS,Orders with negative shipping fees.
+2026-10-13T11:12:38.045190+00:00,data_quality,invalid_review_scores,0,0,,PASS,Reviews with scores outside the 1-5 scale.
+2026-10-13T11:12:38.045190+00:00,relationships,orders_missing_customers,0,0,,PASS,Orders without a matching customer.
+2026-10-13T11:12:38.045190+00:00,relationships,order_items_missing_orders,0,0,,PASS,Order items without a matching order.
+2026-10-13T11:12:38.045190+00:00,relationships,order_items_missing_products,0,0,,PASS,Order items without a matching product.
+2026-10-13T11:12:38.045190+00:00,relationships,payments_missing_orders,0,0,,PASS,Payments without a matching order.
+2026-10-13T11:12:38.045190+00:00,relationships,returns_missing_orders,0,0,,PASS,Returns without a matching order.
+2026-10-13T11:12:38.045190+00:00,relationships,reviews_missing_orders,0,0,,PASS,Reviews without a matching order.
+2026-10-13T11:12:38.045190+00:00,semantic_views,order_line_view_row_count,2908,2908,,PASS,Expected rows in the order-line metrics view.
+2026-10-13T11:12:38.045190+00:00,semantic_views,sales_view_row_count,749,749,,PASS,Expected daily sales/status summary rows.
+2026-10-13T11:12:38.045190+00:00,semantic_views,customer_view_row_count,350,350,,PASS,Expected customer summary rows.
+2026-10-13T11:12:38.045190+00:00,semantic_views,product_view_row_count,26,26,,PASS,Expected product performance rows.
+2026-10-13T11:12:38.045190+00:00,semantic_views,return_view_row_count,42,42,,PASS,Expected return analysis rows.
+2026-10-13T11:12:38.045190+00:00,semantic_views,duplicate_customer_summary_ids,0,0,,PASS,Duplicate customer IDs in customer summary.
+2026-10-13T11:12:38.045190+00:00,semantic_views,duplicate_product_performance_ids,0,0,,PASS,Duplicate product IDs in product performance.
+2026-10-13T11:12:38.045190+00:00,revenue,gross_sales_reconciliation,0.00,0.00,0.00,PASS,Order-line gross sales minus sales-view gross sales.
+2026-10-13T11:12:38.045190+00:00,revenue,discount_reconciliation,0.00,0.00,0.00,PASS,Order-line discounts minus sales-view discounts.
+2026-10-13T11:12:38.045190+00:00,revenue,net_revenue_reconciliation,0.00,0.00,0.00,PASS,Order-line net revenue minus sales-view net revenue.
+2026-10-13T11:12:38.045190+00:00,revenue,customer_revenue_reconciliation,0.00,0.00,0.00,PASS,Sales-view revenue minus customer-view revenue.
+2026-10-13T11:12:38.045190+00:00,revenue,product_revenue_reconciliation,0.00,0.00,0.00,PASS,Sales-view revenue minus product-view revenue.
+2026-10-13T11:12:38.045190+00:00,profit,product_cost_reconciliation,0.00,0.00,0.00,PASS,Order-line cost minus product-view cost.
+2026-10-13T11:12:38.045190+00:00,profit,customer_profit_reconciliation,0.00,0.00,0.00,PASS,Sales-view profit minus customer-view profit.
+2026-10-13T11:12:38.045190+00:00,profit,product_profit_reconciliation,0.00,0.00,0.00,PASS,Sales-view profit minus product-view profit.
+2026-10-13T11:12:38.045190+00:00,profit,profit_formula_difference,0.00,0.00,0.00,PASS,Revenue minus cost minus estimated gross profit.
+2026-10-13T11:12:38.045190+00:00,profit,estimated_gross_margin_pct,31.97,31.97,0.00,PASS,"Estimated gross margin percentage, rounded to two decimals."
+2026-10-13T11:12:38.045190+00:00,business_rules,eligible_cancelled_order_lines,0,0,,PASS,Cancelled order lines must not be sales-eligible.
+2026-10-13T11:12:38.045190+00:00,business_rules,excluded_cancelled_order_lines,167,167,,PASS,Expected cancelled order lines excluded from sales.

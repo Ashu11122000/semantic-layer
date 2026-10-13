@@ -1,0 +1,39 @@
+file_name,field_name,business_description,notes
+customers.csv,customer_id,Unique identifier for each customer,Primary key
+customers.csv,customer_name,Customer's display name,Personal data; restrict in some roles
+customers.csv,segment,Customer group such as Consumer or Corporate,Dimension
+customers.csv,city,Customer city,Dimension; may be restricted
+customers.csv,region,Broad sales region,Useful for row-level security
+customers.csv,signup_date,Date customer registered,Date
+orders.csv,order_id,Unique identifier for each order,Primary key
+orders.csv,customer_id,Customer who placed the order,Foreign key to customers
+orders.csv,order_date,Date the order was placed,Date
+orders.csv,order_status,Current order status,"Delivered, Shipped, Processing, Cancelled, Returned"
+orders.csv,shipping_fee,Shipping fee charged for the order,Currency; separate from item revenue
+orders.csv,ship_date,Date the order shipped,May be blank for unshipped/cancelled orders
+orders.csv,delivery_date,Date the order was delivered,May be blank for undelivered orders
+products.csv,product_id,Unique product identifier,Primary key
+products.csv,product_name,Product name,Dimension
+products.csv,category,Product category,Dimension
+products.csv,unit_price,Current listed price per unit,Currency; use sale snapshot for historical sales
+products.csv,unit_cost,Current cost per unit,Currency; use sale snapshot for historical sales
+order_items.csv,order_item_id,Unique order line identifier,Primary key
+order_items.csv,order_id,Order associated with this line,Foreign key to orders
+order_items.csv,product_id,Product sold on this line,Foreign key to products
+order_items.csv,quantity,Number of units in the line,Whole number
+order_items.csv,unit_price_at_sale,Unit selling price recorded at order time,Currency
+order_items.csv,unit_cost_at_sale,Unit cost recorded at order time,Currency
+order_items.csv,discount_amount,Total discount for the line,Currency; subtract from gross sales
+payments.csv,payment_id,Unique payment record identifier,Primary key
+payments.csv,order_id,Order associated with payment,Foreign key to orders
+payments.csv,payment_method,Method used to pay,Dimension
+payments.csv,payment_status,Payment state,"Paid, Refunded, Failed"
+payments.csv,payment_date,Date payment was recorded,Date
+returns.csv,return_id,Unique return identifier,Primary key
+returns.csv,order_id,Order that was returned,Foreign key to orders
+returns.csv,return_date,Date return was recorded,Date
+returns.csv,return_reason,Reason provided for return,Dimension
+reviews.csv,review_id,Unique review identifier,Primary key
+reviews.csv,order_id,Order being reviewed,Foreign key to orders
+reviews.csv,review_score,Customer review rating from 1 to 5,Ordinal measure
+reviews.csv,review_date,Date review was submitted,Date

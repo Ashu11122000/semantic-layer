@@ -1,0 +1,27 @@
+product_id,product_name,category,unit_price,unit_cost,active_flag
+P001,Wireless Mouse,Electronics,11592.09,7296.19,True
+P002,Keyboard,Electronics,11382.16,6452.56,True
+P003,Headphones,Electronics,17230.54,10767.08,True
+P004,Monitor,Electronics,14533.21,9962.48,True
+P005,Webcam,Electronics,5529.45,2775.19,True
+P006,USB Hub,Electronics,1313.46,803.68,True
+P007,Mixer Grinder,Home & Kitchen,8845.46,4787.22,True
+P008,Water Bottle,Home & Kitchen,11018.22,6321.98,True
+P009,Storage Box,Home & Kitchen,13000.94,9104.04,True
+P010,Desk Lamp,Home & Kitchen,15528.8,11997.74,True
+P011,Cookware Set,Home & Kitchen,2571.1,1519.94,True
+P012,Notebook Pack,Office Supplies,10219.31,5883.61,True
+P013,Pens,Office Supplies,8529.89,4778.8,True
+P014,Printer Paper,Office Supplies,4650.56,2367.34,True
+P015,File Organizer,Office Supplies,5401.26,3215.07,True
+P016,Stapler,Office Supplies,11172.95,6195.19,True
+P017,Yoga Mat,Fitness,15609.21,8240.26,True
+P018,Resistance Bands,Fitness,6061.99,3960.34,True
+P019,Dumbbells,Fitness,5800.69,4112.32,True
+P020,Skipping Rope,Fitness,9094.21,5769.53,True
+P021,Foam Roller,Fitness,9102.98,5212.02,True
+P022,Laptop Sleeve,Accessories,661.38,505.01,True
+P023,Phone Stand,Accessories,9221.64,7100.72,True
+P024,Charging Cable,Accessories,4068.81,2383.79,True
+P025,Backpack,Accessories,1147.09,720.91,True
+P026,Screen Protector,Accessories,15911.53,10760.62,True

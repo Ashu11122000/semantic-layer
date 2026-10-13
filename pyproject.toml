@@ -1,0 +1,16 @@
+[project]
+name = "semantic-layer-project"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "openpyxl>=3.1,<4.0",
+    "pandas>=2.2,<4.0",
+    "psycopg[binary]>=3.2,<4.0",
+    "python-dotenv>=1.0,<2.0",
+    "sqlalchemy>=2.0,<3.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0,<10.0",
+]
